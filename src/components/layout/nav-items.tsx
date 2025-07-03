@@ -28,9 +28,9 @@ export const NavItems = ({
             variant="ghost"
             asChild
             className={cn(
-              "hover:bg-transparent text-base hover:underline",
+              "hover:bg-transparent text-base hover:underline dark:hover:bg-transparent",
               pathname === href &&
-                "bg-primary hover:bg-primary text-primary-foreground hover:text-primary-foreground",
+                "bg-primary hover:bg-primary dark:hover:bg-foreground text-primary-foreground hover:text-primary-foreground hover:no-underline",
               buttonClassName
             )}
           >

@@ -7,6 +7,7 @@ import { MenuIcon } from "lucide-react";
 import { NavItems } from "./nav-items";
 import { Button } from "../ui/button";
 import { NavbarMobile } from "./navbar-mobile";
+import { ThemeToggle } from "../ui/theme-toggle";
 
 export const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(true);
@@ -16,8 +17,11 @@ export const Navbar = () => {
       <Link href="/" className="text-3xl lg:text-4xl font-atma font-semibold">
         vendor_verse
       </Link>
-      <NavItems containerClassName="lg:space-x-1 space-x-2 lg:block hidden" />
-      <div className="space-x-3 lg:block hidden">
+      <NavItems containerClassName="space-x-3  lg:block hidden" />
+      <div className="space-x-3 lg:flex hidden items-center">
+        <Button size="icon" asChild>
+          <ThemeToggle />
+        </Button>
         <Button asChild>
           <Link href="/sign-in">Log in</Link>
         </Button>
