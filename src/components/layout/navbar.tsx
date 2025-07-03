@@ -10,7 +10,7 @@ import { NavbarMobile } from "./navbar-mobile";
 import { ThemeToggle } from "../ui/theme-toggle";
 
 export const Navbar = () => {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <nav className="border-b h-20 px-4 sm:px-16 lg:px-20 xl:px-28 flex justify-between items-center">
